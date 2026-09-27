@@ -13,8 +13,11 @@ export type AnalyticsEventName =
   | 'first_message_sent'
   | 'message_sent'
   | 'assistant_response_shown'
+  | 'chat_request_failed'
   | 'three_turns_completed'
   | 'invitation_shown'
+  | 'invitation_ack_failed'
+  | 'growth_choice_failed'
   | 'next_state_selected'
   | 'chat_exited'
   | 'next_step_opened';
