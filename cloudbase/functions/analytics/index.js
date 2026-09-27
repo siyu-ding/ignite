@@ -7,8 +7,10 @@ const db = app.rdb({ database: 'public' });
 const ALLOWED_EVENTS = new Set([
   'app_opened', 'opening_viewed', 'opening_skipped', 'opening_completed',
   'home_viewed', 'chat_cta_clicked', 'chat_opened', 'first_message_sent',
-  'message_sent', 'assistant_response_shown', 'three_turns_completed',
-  'invitation_shown', 'next_state_selected', 'chat_exited', 'next_step_opened',
+  'message_sent', 'assistant_response_shown', 'chat_request_failed',
+  'three_turns_completed', 'invitation_shown', 'invitation_ack_failed',
+  'growth_choice_failed', 'next_state_selected', 'chat_exited',
+  'next_step_opened',
 ]);
 
 function response(statusCode, body) {
